@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>survey-form</title>
+    <title>survey form</title>
 </head>
+
 <body>
-    <h1>hello people</h1>
+    <div id="title">
+        <h1>GeeksforGeeks Survey Form</h1>
+    </div>
+    <form id="form">
+        
+        <section id="sect">
+            <div id="input">
+        <label for="name">Name</label> <br>
+        <input type="text" placeholder="Enter your name" id="name"><br>
+        <label for="email">Email</label><br>
+        <input type="email" placeholder="Enter your email" id="email"><br>
+        <label for="age">Age</label> <br>
+        <input type="number" placeholder="Enter your age" id="age"><br>
+        <label for="choose">Which option best describes you?</label>
+        <select name="option" id="choose">
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="Professional">Professional</option>
+            <option value="others">Others</option>
+        </select>
+            </div>
+        <div id="option">
+            <div id="recom">
+         <label for="friend">Would you recommend GeeksforGeeks to a friend?</label> <br>
+       
+           <label for="f-1">
+                <input type="radio"  id="f-1" name="recommend" >Yes
+            </label> <br>
+            
+            <label for="f-2">
+                <input type="radio"  id="f-2" name="recommend">Maybe
+            </label> <br>
+
+            <label for="f-3">
+                <input type="radio"  id="f-3" name="recommend">no
+            </label><br>
+            </div>
+
+            <div id="lang">
+             <label for="lang">Languages and Frameworks known (Check all that apply)</label> <br>
+             
+             <label for="c"><input type="checkbox" name="language" id="c">C</label> <br>
+
+             <label for="c++"><input type="checkbox" name="language" id="c++">C++</label> <br>
+
+             <label for="c#"><input type="checkbox" name="language" id="c#">C#</label> <br>
+            </div>
+        </div>
+        </section>
+        <div id="comm">
+       <label for="comment">Any comments or suggestions</label><br>
+      <textarea name="comments" id="ta" placeholder="enter any your comments"></textarea>
+        </div>
+        <div id="sub">
+        <input type="submit" value="Submit">
+        
+        </div>
+    </form>
 </body>
+
 </html>
